@@ -13,4 +13,4 @@ spec:
   lifecycle: production
   owner: iscatalogue
   providesApis:
-    - my-awesome-api
+    - health-check-api
