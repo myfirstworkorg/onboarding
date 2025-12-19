@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: onboarding-component
+  name: onboarding-service
   description: A sample component for MkDocs documentation in Backstage
   annotations:
     # This annotation tells TechDocs where to find the documentation source files.
@@ -12,3 +12,5 @@ spec:
   type: service
   lifecycle: production
   owner: iscatalogue
+  providesApis:
+    - my-awesome-api
