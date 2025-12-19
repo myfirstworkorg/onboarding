@@ -1,0 +1,7 @@
+site_name: 'Example Documentation'
+site_description: 'Documentation for my amazing service'
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+plugins:
+  - techdocs-core
