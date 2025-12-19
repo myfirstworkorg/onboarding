@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: example-documentation-component # A unique, human-readable name
+  description: A sample component for MkDocs documentation in Backstage
+  annotations:
+    # This annotation tells TechDocs where to find the documentation source files.
+    # 'dir:.' means the source files (including mkdocs.yml and the docs/ folder) 
+    # are in the same directory as this catalog-info.yaml file.
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service # Or 'documentation' if it is a standalone documentation project
+  lifecycle: production
+  owner: my-team-name # Must be a valid user or group in your Backstage catalog
